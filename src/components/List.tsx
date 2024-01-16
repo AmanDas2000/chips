@@ -14,10 +14,10 @@ const List = ({ arr, add }: List) => {
     return (
         <ul className="mt-3 absolute w-[400px] text-sm font-medium text-gray-900 bg-white border border-gray-200">
             {arr.map((item: Info, i) =>
-            <div>
+            <div key={i}>
 
                 <li
-                    key={i}
+                    
                     className="py-8 px-5 flex h-[42px] cursor-pointer items-center justify-between dark:border-gray-600 hover:bg-slate-200"
                     onClick={(e) => add(i)}
                     >
